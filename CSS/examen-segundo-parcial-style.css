@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    height: 2vh;
+    background-color: white;
+    justify-content: space-around;
+    align-items: stretch;
+    gap: 70px;
+    padding: 30px 50px;
+}
+
+.logo{
+    flex:1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3px;
+}
+
+.logo img{
+    max-height: 38px;
+}
+
+.navbar{
+    flex: 4;
+    display: flex ;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: stretch;
+    justify-content:space-evenly;
+    width: 60%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 1%;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.navbar li{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    background: url(../images/hero-bg.jpg);
+    background-size: 120%;
+    background-position: left center;
+    min-height: 92vh;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding-left: 8vw;
+}
+
+.log-in{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9em;
+    font-weight: 600;
+    background: none;
+    border: black solid 2px;
+    border-radius: 10px;
+    text-align: center;
+    width: 50px;
+}
+
+
+.hero-subtitle{
+    font-size: 65px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 0;
+    font-weight:700 ;
+    margin: 0 0 0 0;
+    line-height: 3vh;
+}
+
+h1{
+    font-size: 50px;
+    letter-spacing: -0.02em;
+    margin-bottom: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-weight: 400;
+    padding-bottom: 5px;
+    line-height: 5vh;
+    
+    
+}
+
+header p{
+    font-size: 26px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    margin: 0 0 0 0;
+    line-height: 4vh;
+}
+
+
+.join-now{
+    background:none;
+    border: #000000 2px solid;
+    width: 130px;
+    height: 40px;
+    border-radius: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.hero-contents{
+    margin-left: 70px;
+    margin-bottom: 50px;
+}
+

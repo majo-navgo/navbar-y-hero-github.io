@@ -1,0 +1,41 @@
+body{
+    background-color: #fbfbfbfb;
+    margin: 0;
+}
+
+header{
+    min-height: 20vh;
+    background-color: #EF6351;
+}
+
+nav{
+    min-height: 10vh;
+    background-color: #F38375;
+}
+
+section{
+    min-height: 55vh;
+    display: flex;
+
+}
+
+main{
+    background-color: #F7A399;
+    flex: 3;
+}
+
+aside{
+    background-color: #FBC3BC;
+    flex: 1;
+}
+
+footer{
+    min-height: 15vh;
+    background-color: #FFE3E0;
+}
+
+@media only screen and (max-width: 600px){
+  section{
+    flex-direction: column;
+  }  
+}

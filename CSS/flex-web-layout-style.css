@@ -1,0 +1,90 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    min-height: 20vh;
+    width: 100%;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.row-middle{
+    min-height: 50vh;
+}
+
+div{
+    border-radius: 10px;
+}
+
+.col{
+    border: 1px solid rgb(255, 255, 255);
+    flex: 1;
+}
+
+.orange{
+    background-color: orangered;
+}
+
+.yellow{
+    background-color: rgb(247, 239, 0);
+    flex: 4.5;
+}
+
+.purple{
+    background-color: purple;
+    flex: 1;
+}
+
+.teal{
+    background-color: teal;
+}
+
+.teal-middle{
+    flex: 1.5;
+}
+
+.col:has(.purple){
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    border: none;
+    flex: 5.5;
+}
+
+.orange:first-child{
+    flex: 6.5;
+}
+
+.orange:last-child{
+    flex: 3.5;
+}
+
+@media only screen and (max-width: 600px) {
+    .row{
+        flex-direction: column;
+    }
+    .orange:first-child,
+    .orange:last-child,
+    .yellow,
+    .purple,
+    .purple div,
+    .teal-middle,
+    .col:has(.purple){
+        flex: 1;
+    }
+}

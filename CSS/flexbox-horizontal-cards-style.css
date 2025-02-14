@@ -1,0 +1,156 @@
+body{
+    background: #ededed;
+}
+
+.container{
+    display: flex;
+    width: 70%;
+    min-height: 20vh;
+    margin: auto;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.row{
+    background: white;
+    box-shadow: 9px 8px 18px -7px rgba(58,58,58,0.81);
+-webkit-box-shadow: 9px 8px 18px -7px rgba(58,58,58,0.81);
+-moz-box-shadow: 9px 8px 18px -7px rgba(58,58,58,0.81);
+display: flex;
+gap: 40px;
+}
+
+.image-container{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1em;
+}
+
+.image-container img{
+    width: 80%;
+
+}
+
+.data-container{
+    flex: 3;
+}
+
+.blue-border{
+    border-right: 10px solid #048b99;
+}
+
+.inner-row:last-child{
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    flex-direction: row-reverse;
+}
+
+.inner-row{
+    padding:.5em 2em 1.5em 0;
+}
+
+.btn{
+    border:none;
+    padding: .6em 1.3em;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1em;
+    border-radius: 20px;
+}
+
+.primary-blue{
+    background-color: rgb(31, 165, 255);
+    color: white;
+}
+.secondary-blue{
+    border: 2px solid rgb(31, 165, 255);
+    background: none;
+}
+
+.green-border{
+    border-right: 10px solid #9ee86c;
+}
+
+.primary-green{
+    background-color:#9ee86c;
+    color: white;
+}
+.secondary-green{
+    border: 2px solid #9ee86c;
+    background: none;
+}
+.purple-border{
+    border-right:10px solid purple;
+}
+
+.primary-purple{
+    background-color:purple;
+    color: white; 
+}
+
+.secondary-purple{
+    border: 2px solid purple;
+    background: none;
+}
+
+.orange-border{
+    border-right:10px solid  rgb(255, 153, 0);
+}
+
+.primary-orange{
+    background-color:  rgb(255, 153, 0);
+    color: white; 
+}
+
+.secondary-orange{
+    border: 2px solid rgb(255, 153, 0);
+    background: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .inner-row{
+        padding: 0em 2em 1.5em;
+    }
+
+    .inner-row:last-child{
+        flex-direction: column-reverse;
+    }
+
+    .blue-border,
+    .green-border,
+    .purple-border,
+    .orange-border{
+        border-right: 0;
+    }
+
+    .blue-border{
+        border-bottom: 15px solid #048b99;
+    }
+
+    .green-border{
+    border-bottom: 15px solid #9ee86c;
+    }
+
+    .purple-border{
+    border-bottom:15px solid purple;
+    }
+
+    .orange-border{
+    border-bottom: 15px solid  rgb(255, 153, 0);
+    }
+
+    .image-container{
+        padding: 0;
+    }
+
+    .image-container img{
+        width: 100%;
+    }
+}

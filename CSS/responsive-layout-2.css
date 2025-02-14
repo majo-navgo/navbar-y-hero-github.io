@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fbfbfbfb;
+    margin: 5vh 3vw;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    
+  }
+
+header{
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+header div{
+    background-color: orange;
+    flex: 1;
+    min-height:20vh ;
+}
+
+nav{
+    background-color: rgb(186, 250, 90);
+    display: flex;
+    flex: 1;
+    min-height: 40vh;
+    gap: 20px;
+}
+
+section{
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+section div{
+    background-color: rgb(96, 151, 232);
+    flex: 1;
+    min-height: 20vh;
+}
+
+footer{
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+footer div{
+    background-color: rgb(216, 216, 216);
+    flex: 1;
+    min-height: 15vh;
+}
+
+@media only screen and (max-width: 1023px){
+    .container{
+        gap: 10px;
+        height: 100vh;
+    }
+
+    body{
+        margin: 3vh 3vw;
+    }
+
+    header{
+        flex-direction: column;
+        flex: 1;
+        }
+
+    header div{
+        min-height: 10vh;
+    }
+
+    nav{
+        flex: 3;
+        min-height: 30vh;
+    }
+
+    section{
+        flex-direction: column;
+        flex: 4;
+    }
+
+    section div{
+        min-height: 10vh;
+    }
+
+    footer{
+        flex:3;
+        flex-wrap: wrap;
+    }
+
+    footer div{
+        flex: auto;
+        width: 45%;
+        min-height: 10vh;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .container{
+        gap: 15px;
+    }
+
+    body{
+        margin: 2vh
+    }
+        
+
+    header{
+        flex-direction: column;
+        flex: 1;
+    }
+
+    header div{
+        min-height: 10vh;
+    }
+
+    nav{
+        min-height: 15vh;
+    }
+
+    section{
+        flex-direction: column;
+        flex: 1;
+    }
+
+    section div{
+        min-height: 20vh;
+    }
+
+    footer{
+        flex-direction: column;
+        flex:1;
+    }
+    footer div{
+        flex: 1;
+        width: 100%;
+    }
+
+}
